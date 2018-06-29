@@ -4,10 +4,10 @@ import { Observable, of, throwError } from 'rxjs';        // need to import addi
 import { catchError, map, tap } from 'rxjs/operators';    // need to handle http errors
 import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
 
-
 @Injectable({
   providedIn: 'root'
 })
+
 export class MallsService {
 
     malls: Malls[];
@@ -29,6 +29,8 @@ export class MallsService {
     }
 
     // method to retrieve array of objects (Malls)
+    //Fetching data from the API
+    
   getMalls(mall?:Malls): Observable<Malls[]> {
     // return of(this.malls);
     if(mall){
