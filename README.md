@@ -1,28 +1,24 @@
-# Assg2p3
+# Web Trends - Assignment 2 Part 3
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.7.
+## Objective
+Using Ngoc API - Toronto Malls to display all shopping malls using Angular 6.
 
-## Development server
+## Description
+I'm using NgOc API to display data. This API is available at http://api.jadeto.com/malls.php?api_key=YOUR_API_KEY  and the API key is qwertyuiop.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+##API
+To retrieve all the data of all the malls, only the valid API key is required for the query string. No API key results in the HTTP 401 Unauthorized client error status response code page.
 
-## Code scaffolding
+##Models, Service, & Componet
+Model malls.ts has been created and pushed to Git branch (NewModules) 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Service (malls.service.ts) & Component (folder malls) Module has been created.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+##Styling
+malls.component.html and associated CSS has been updated to ensure that the data from API should be viewable in formatted form on all
+screen sizes without content requiring side-scrolling.
 
-## Running unit tests
+##Git
+Project is pushed to Git with a branch NewModules showing each feature.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-# WT-Assignment2Part3

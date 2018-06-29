@@ -12,15 +12,14 @@ export class MallsComponent implements OnInit {
   malls: Malls[];
 
   findmalls(malldata){
-    
-    this.mallsService.getMalls(malldata).subscribe(results => this.malls = results);
+        this.mallsService.getMalls(malldata).subscribe(results => this.malls = results);
   }
 
   constructor(private mallsService: MallsService) { }
 
   ngOnInit() {
 
-    this.mallsService.getMalls().subscribe(data => this.malls = data);
+        this.mallsService.getMalls().subscribe(data => this.malls = data);
   }
 
 }

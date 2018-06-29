@@ -1,4 +1,5 @@
 //Model created to mirror all fields of Jade API
+
 export class Malls {
 
     id:number;
@@ -12,6 +13,5 @@ export class Malls {
     stores:number;
     anchorTenants:number;
     opened:Date;
-    website:string;
-    
+    website:string;   
 }

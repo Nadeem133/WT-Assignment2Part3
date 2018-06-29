@@ -1,4 +1,4 @@
-/* Basic CSS formating */
+/* CSS formating */
 
 .page-heading {
     color: black;
@@ -6,6 +6,7 @@
 }
 .search-bar{
     text-align: center;
+    color: black;
 }
 #malls{
     color:darkblue;
