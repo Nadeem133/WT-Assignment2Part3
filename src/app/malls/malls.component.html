@@ -1,5 +1,5 @@
 <head>
-  <title>Malls API Usage - Assignment2-P3</title>
+  <title>Malls API Usage - Web Trends - Assignment2-Part3</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -22,7 +22,6 @@
 
 <div class="page-wrapper" *ngFor="let m of malls" id="{{m.id}}" (click)="onSelect(m)" [class.selected]="m === malls">
   <ul id="malls">
-
     <!---Loop over loopables-->
     <li>Id : {{m.id}} </li>
     <li><strong>Name : <font color="red">{{m.name}} </font></strong></li>

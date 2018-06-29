@@ -12,6 +12,7 @@ export class MallsComponent implements OnInit {
   malls: Malls[];
 
   findmalls(malldata){
+    
     this.mallsService.getMalls(malldata).subscribe(results => this.malls = results);
   }
 
