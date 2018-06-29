@@ -1,0 +1,42 @@
+<head>
+  <title>Malls API Usage - Assignment2-P3</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<div class="page-heading">
+<h1>Toronto Malls (API)</h1>
+<h4>HTTP5302 - Assignment 2 Part 3</h4>
+<h5>API Written by Ngoc and used by Muhammad A Nadeem</h5>
+<p></p>
+</div>
+
+<div class="search-bar">
+<h3>Search Malls</h3>
+<p>This will search the name of the Mall or any piece of text within Mall name!</p>
+<input [(ngModel)]="mallsearch.name">
+<button (click)="findmalls(mallsearch)">Search</button>
+</div>
+
+<div class="page-wrapper" *ngFor="let m of malls" id="{{m.id}}" (click)="onSelect(m)" [class.selected]="m === malls">
+  <ul id="malls">
+
+    <!---Loop over loopables-->
+    <li>Id : {{m.id}} </li>
+    <li><strong>Name : <font color="red">{{m.name}} </font></strong></li>
+    <li><strong>Description :  </strong>{{m.description}}</li>
+    <li><strong>Address : </strong>{{m.address}}</li>
+    <li><strong>City : </strong>{{m.city}}</li>
+    <li><strong>Province : </strong>{{m.province}}</li>
+    <li><strong>Postal Code : </strong>{{m.postalCode}}</li>
+    <li><strong>Phone :  </strong>{{m.phone}}</li>
+    <li><strong>Stores : </strong>{{m.stores}}</li>
+    <li><strong>Anchor Tenants : </strong>{{m.anchorTenants}}</li>
+    <li><strong>Opened : </strong>{{m.opened}}</li>
+    <li><strong>Website : </strong>{{m.website}}</li>
+    <p>***************************************</p>
+  </ul>
+</div>
+
