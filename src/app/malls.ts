@@ -1,3 +1,4 @@
+//Model created to mirror all fields of Jade API
 export class Malls {
 
     id:number;
